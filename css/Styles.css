@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; 
+  background-color: #000; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #0a0a0a; 
+  color: white;
+  border-bottom: 1px solid #222; 
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.nav-links {
+  list-style: none; 
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none; 
+  color: #efefef;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #888; 
+}
+
+.about-header {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 50px; /* Espaço entre a foto e as informações */
+  padding: 80px 20px;
+  background-color: #fff;
+  flex-wrap: wrap; /* Garante que em telas pequenas a foto fique em cima do nome */
+}
+
+/* Ajuste da Foto de Perfil (Para ficar um pouco maior) */
+.profile-pic img {
+  width: 250px; /* Aumentamos de 220px para 250px */
+  height: 250px; /* Mantemos o mesmo valor para não distorcer */
+  border-radius: 50%; /* Garante que fique redondo */
+  object-fit: cover;
+  border: 4px solid #f0f0f0; /* Um contorno leve para destacar */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra suave para dar profundidade */
+}
+
+/* Ajuste da Info (Nome, Cargo, Linha e Ícones) */
+.profile-info {
+  text-align: left; /* Alinhado à esquerda para contrastar com a foto */
+  max-width: 450px; /* Limita a largura para o texto não ficar tão largo */
+}
+
+.profile-info h1 {
+  font-size: 3.5rem; /* Nome "Artur Simoni" ganha mais destaque */
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+/* A linha (hr) estava ocupando a largura total na sua imagem */
+.divider {
+  width: 100%; /* Ela vai ocupar a largura do container info apenas */
+  max-width: 350px; /* Limita a largura máxima da linha */
+  border: 0;
+  border-top: 2px solid #000;
+  margin: 10px 0;
+}
+
+.profile-info h2 {
+  font-size: 1.8rem; /* Cargo "Desenvolvedor Web" */
+  font-weight: 300;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Melhoria na Proporção e Alinhamento dos Ícones Sociais */
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* Alinha os ícones à esquerda, junto com o texto */
+    gap: 20px; /* Espaço entre os ícones */
+    margin-top: 25px; 
+}
+
+.social-icons img {
+    width: 45px; 
+    height: 45px; 
+    transition: transform 0.3s ease; 
+}
+
+.social-icons img:hover {
+    transform: scale(1.15); 
+}
+
+.about-content {
+  background-color: #121212;
+  color: #fff;
+  padding: 80px 15%; 
+  text-align: center;
+}
+
+.about-content p {
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.tech-section {
+    background-color: #fff;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.tech-title h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.tech-title span {
+    font-size: 1.5rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+}
+
+.tech-item img {
+    width: 80px; 
+    height: auto;
+    filter: grayscale(0.2); 
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.main-footer {
+    background-color: #000; 
+    color: #fff;
+    padding: 60px 8%; 
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    border-top: 1px solid #222; 
+    padding-top: 40px;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #efefef;
+}
+
+.location-info p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #efefef;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        align-items: center;
+    }
+}
