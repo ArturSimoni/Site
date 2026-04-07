@@ -653,6 +653,7 @@ html {
     font-size: 2rem;
     flex-direction: column;
     gap: 10px;
+    color: #000000;
   }
 
   .tech-title span {
